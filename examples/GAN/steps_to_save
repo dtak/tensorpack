@@ -1,0 +1,9 @@
+# Train the model
+python InfoGAN-mnist.py
+
+# Save the model in an alternate format
+python InfoGAN-mnist.py --sample --load ./info_train/model-50000
+
+# Copy the model to the right place; from there, run the tensorflowjs converter
+# as normal.
+cp InfoGAN-mnist.pb /path/to/web/interface
